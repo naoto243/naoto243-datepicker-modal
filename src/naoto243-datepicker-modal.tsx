@@ -61,7 +61,7 @@ export default class Naoto243DatePickerModal extends React.Component<Props, any>
                       <CalendarIconStyle>
                         <FontAwesome
                           onClick={e => this.ref.showPreviousYear()}
-                          name='chevron-double-left'
+                          name='backward'
                           size='1x'
                         />
                         <FontAwesome
@@ -76,7 +76,7 @@ export default class Naoto243DatePickerModal extends React.Component<Props, any>
                         />
                         <FontAwesome
                           onClick={e => this.ref.showNextYear()}
-                          name='chevron-double-right'
+                          name='forward'
                           size='1x'
                         />
                       </CalendarIconStyle>

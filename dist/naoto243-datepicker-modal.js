@@ -61,10 +61,10 @@ var Naoto243DatePickerModal = /** @class */ (function (_super) {
                                 return React.createElement(NavStyle, null,
                                     React.createElement(DateText, null, moment(month).format('YYYY/MM')),
                                     React.createElement(CalendarIconStyle, null,
-                                        React.createElement(FontAwesome, { onClick: function (e) { return _this.ref.showPreviousYear(); }, name: 'chevron-double-left', size: '1x' }),
+                                        React.createElement(FontAwesome, { onClick: function (e) { return _this.ref.showPreviousYear(); }, name: 'backward', size: '1x' }),
                                         React.createElement(FontAwesome, { onClick: function (e) { return _this.ref.showPreviousMonth(); }, name: 'chevron-left', size: '1x' }),
                                         React.createElement(FontAwesome, { onClick: function (e) { return _this.ref.showNextMonth(); }, name: 'chevron-right', size: '1x' }),
-                                        React.createElement(FontAwesome, { onClick: function (e) { return _this.ref.showNextYear(); }, name: 'chevron-double-right', size: '1x' })));
+                                        React.createElement(FontAwesome, { onClick: function (e) { return _this.ref.showNextYear(); }, name: 'forward', size: '1x' })));
                             }, captionElement: function (_a) {
                                 var localeUtils = _a.localeUtils;
                                 return (React.createElement("span", null));
