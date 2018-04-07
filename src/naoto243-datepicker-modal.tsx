@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from 'styled-components';
 import DayPicker from 'react-day-picker';
-import moment = require('moment');
+const moment = require('moment');
 import {Modal} from './modal';
 const FontAwesome = require('react-fontawesome');
 
