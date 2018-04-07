@@ -1,7 +1,8 @@
 {
   "name": "naoto243-datepicker-modal",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/naoto243-datepicker-modal.js",
+  "types": "./type/naoto243-datepicker-modal.d.ts",
   "license": "MIT",
   "dependencies": {
     "moment": "^2.22.0",
@@ -14,10 +15,11 @@
     "@types/react": "^16.3.5",
     "@types/react-dom": "^16.0.4",
     "csstype": "^2.1.1",
+    "react-fontawesome": "^1.6.1",
     "typescript": "^2.8.1"
   },
-  "scripts" : {
-    "watch":"./node_modules/typescript/bin/tsc --watch --jsx react --target esnext --skipDefaultLibCheck true --skipLibCheck  src/ts/** -outDir dist/ ",
-    "declaration":"./node_modules/typescript/bin/tsc --watch --jsx react --target esnext --skipDefaultLibCheck --emitDeclarationOnly --skipLibCheck --declaration src/ts/** -outDir type/ "
+  "scripts": {
+    "watch": "./node_modules/typescript/bin/tsc --watch --module commonjs  --jsx react --target esnext --skipDefaultLibCheck --skipLibCheck --moduleResolution node src/** --outDir dist/ ",
+    "declaration": "./node_modules/typescript/bin/tsc --watch --module commonjs --jsx react --target esnext --skipDefaultLibCheck --emitDeclarationOnly --skipLibCheck --moduleResolution node --declaration  src/** --declarationDir type/ "
   }
 }
