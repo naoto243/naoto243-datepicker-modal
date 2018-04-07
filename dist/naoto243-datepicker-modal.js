@@ -1,91 +1,82 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = require("react");
-const styled_components_1 = require("styled-components");
-const DayPicker_1 = require("react-day-picker/types/DayPicker");
-const moment = require("moment");
-const modal_1 = require("./modal");
-const FontAwesome = require('react-fontawesome');
-class Naoto243DatePickerModal extends React.Component {
-    constructor() {
-        super(...arguments);
-        this.open = false;
+var React = require("react");
+var styled_components_1 = require("styled-components");
+var DayPicker_1 = require("react-day-picker/types/DayPicker");
+var moment = require("moment");
+var modal_1 = require("./modal");
+var FontAwesome = require('react-fontawesome');
+var Naoto243DatePickerModal = /** @class */ (function (_super) {
+    __extends(Naoto243DatePickerModal, _super);
+    function Naoto243DatePickerModal() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.open = false;
+        return _this;
     }
-    toggleOpen() {
+    Naoto243DatePickerModal.prototype.toggleOpen = function () {
         this.open = !this.open;
-        this.setState({ ...this.state });
-    }
-    render() {
+        this.setState(__assign({}, this.state));
+    };
+    Naoto243DatePickerModal.prototype.render = function () {
+        var _this = this;
         return (React.createElement(React.Fragment, null,
             this.props.form({
-                open: () => this.toggleOpen()
+                open: function () { return _this.toggleOpen(); }
             }),
             this.open && (React.createElement(modal_1.Modal, { portalDOM: this.props.portalDOM },
-                React.createElement(ModalStyle, { onClick: e => {
-                        this.toggleOpen();
+                React.createElement(ModalStyle, { onClick: function (e) {
+                        _this.toggleOpen();
                     } },
-                    React.createElement("div", { className: 'day-picker', onClick: e => {
+                    React.createElement("div", { className: 'day-picker', onClick: function (e) {
                             e.preventDefault();
                             e.stopPropagation();
                         } },
-                        React.createElement(DayPicker_1.default, { ref: ref => {
-                                this.ref = ref;
-                            }, className: 'day-picker', onDayClick: e => {
-                                this.toggleOpen();
-                                this.props.onChange(e);
-                            }, locale: "ja", selectedDays: this.props.date, navbarElement: ({ month }) => React.createElement(NavStyle, null,
-                                React.createElement(DateText, null, moment(month).format('YYYY/MM')),
-                                React.createElement(CalendarIconStyle, null,
-                                    React.createElement(FontAwesome, { onClick: e => this.ref.showPreviousYear(), name: 'chevron-double-left', size: '1x' }),
-                                    React.createElement(FontAwesome, { onClick: e => this.ref.showPreviousMonth(), name: 'chevron-left', size: '1x' }),
-                                    React.createElement(FontAwesome, { onClick: e => this.ref.showNextMonth(), name: 'chevron-right', size: '1x' }),
-                                    React.createElement(FontAwesome, { onClick: e => this.ref.showNextYear(), name: 'chevron-double-right', size: '1x' }))), captionElement: ({ localeUtils }) => (React.createElement("span", null)) })))))));
-    }
-}
+                        React.createElement(DayPicker_1.default, { ref: function (ref) {
+                                _this.ref = ref;
+                            }, className: 'day-picker', onDayClick: function (e) {
+                                _this.toggleOpen();
+                                _this.props.onChange(e);
+                            }, locale: "ja", selectedDays: this.props.date, navbarElement: function (_a) {
+                                var month = _a.month;
+                                return React.createElement(NavStyle, null,
+                                    React.createElement(DateText, null, moment(month).format('YYYY/MM')),
+                                    React.createElement(CalendarIconStyle, null,
+                                        React.createElement(FontAwesome, { onClick: function (e) { return _this.ref.showPreviousYear(); }, name: 'chevron-double-left', size: '1x' }),
+                                        React.createElement(FontAwesome, { onClick: function (e) { return _this.ref.showPreviousMonth(); }, name: 'chevron-left', size: '1x' }),
+                                        React.createElement(FontAwesome, { onClick: function (e) { return _this.ref.showNextMonth(); }, name: 'chevron-right', size: '1x' }),
+                                        React.createElement(FontAwesome, { onClick: function (e) { return _this.ref.showNextYear(); }, name: 'chevron-double-right', size: '1x' })));
+                            }, captionElement: function (_a) {
+                                var localeUtils = _a.localeUtils;
+                                return (React.createElement("span", null));
+                            } })))))));
+    };
+    return Naoto243DatePickerModal;
+}(React.Component));
 exports.default = Naoto243DatePickerModal;
-const ModalStyle = styled_components_1.default.div `
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 300;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  & .day-picker {
-    background-color: #fbfbfb;
-    height: 330px;
-    width: 320px;
-    padding-bottom: 16px;
-    padding-top: 16px;
-  }
-`;
-const NavStyle = styled_components_1.default.div `
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-const DateText = styled_components_1.default.span `
-  font-weight: bold;
-  font-size: 1.6em;
-  width : 100px;
-`;
-const CalendarIconStyle = styled_components_1.default.div `
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  & > * {
-    padding: 2px;
-    font-size: 1.2em;
-    font-weight: bold;
-    //background-color: #c7c7cf;
-    //border-radius: 3px;
-    margin-left: 4px;
-    //color: white;
-  }
-`;
+var ModalStyle = styled_components_1.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  background-color: rgba(0, 0, 0, 0.5);\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 300;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n  & .day-picker {\n    background-color: #fbfbfb;\n    height: 330px;\n    width: 320px;\n    padding-bottom: 16px;\n    padding-top: 16px;\n  }\n"], ["\n  background-color: rgba(0, 0, 0, 0.5);\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 300;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n  & .day-picker {\n    background-color: #fbfbfb;\n    height: 330px;\n    width: 320px;\n    padding-bottom: 16px;\n    padding-top: 16px;\n  }\n"])));
+var NavStyle = styled_components_1.default.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n"], ["\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n"])));
+var DateText = styled_components_1.default.span(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  font-weight: bold;\n  font-size: 1.6em;\n  width : 100px;\n"], ["\n  font-weight: bold;\n  font-size: 1.6em;\n  width : 100px;\n"])));
+var CalendarIconStyle = styled_components_1.default.div(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  \n  & > * {\n    padding: 2px;\n    font-size: 1.2em;\n    font-weight: bold;\n    //background-color: #c7c7cf;\n    //border-radius: 3px;\n    margin-left: 4px;\n    //color: white;\n  }\n"], ["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  \n  & > * {\n    padding: 2px;\n    font-size: 1.2em;\n    font-weight: bold;\n    //background-color: #c7c7cf;\n    //border-radius: 3px;\n    margin-left: 4px;\n    //color: white;\n  }\n"])));
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
