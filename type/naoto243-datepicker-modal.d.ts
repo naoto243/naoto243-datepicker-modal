@@ -1,6 +1,6 @@
 /// <reference types="react" />
 import * as React from "react";
-import DayPicker from 'react-day-picker/types/DayPicker';
+import DayPicker from 'react-day-picker';
 export interface Props {
     portalDOM: HTMLElement;
     form: any;

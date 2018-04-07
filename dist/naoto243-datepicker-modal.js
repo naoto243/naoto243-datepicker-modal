@@ -22,7 +22,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 };
 import * as React from "react";
 import styled from 'styled-components';
-import DayPicker from 'react-day-picker/types/DayPicker';
+import DayPicker from 'react-day-picker';
 import { Modal } from './modal';
 var FontAwesome = require('react-fontawesome');
 var Naoto243DatePickerModal = /** @class */ (function (_super) {
