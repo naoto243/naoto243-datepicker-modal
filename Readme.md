@@ -1,4 +1,35 @@
+ # naoto243-datepicker-modal#master 
 
+```
+yarn add git+https://github.com/naoto243/naoto243-datepicker-modal#master 
+```
+
+
+```jsx
+
+const pdom : any = document.getElementById("modal-root");
+
+ ...
+ 
+   <Naoto243DatePickerModal
+     date={birthDate}
+     portalDOM={pdom}
+     form={({ open }) => (
+       <input
+         type="text"
+         name="birth_date"
+         value={moment(fbirthDate).format('YYYY/MM/DD') }
+         onClick={open}
+       />
+     )}
+     onChange={date => {
+     }}
+   />
+
+```
+
+
+![image](https://user-images.githubusercontent.com/1452731/38459296-e7cdab9c-3ae2-11e8-8251-6406b613424d.png)
 
 
 ```

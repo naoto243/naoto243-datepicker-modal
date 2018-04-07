@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5a905de2-c9f4-4bc8-9e4a-595e08f7fa8b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/naoto243-datepicker-modal.js" afterPath="$PROJECT_DIR$/dist/naoto243-datepicker-modal.js" />
-      <change beforePath="$PROJECT_DIR$/src/naoto243-datepicker-modal.tsx" afterPath="$PROJECT_DIR$/src/naoto243-datepicker-modal.tsx" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" afterPath="$PROJECT_DIR$/Readme.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +34,8 @@
         <entry file="file://$PROJECT_DIR$/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="76">
-                <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <first_editor relative-caret-position="19">
+                <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -67,8 +66,8 @@
       <file leaf-file-name="naoto243-datepicker-modal.tsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/naoto243-datepicker-modal.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+            <state relative-caret-position="1349">
+              <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
               <folding>
                 <marker date="1523128150486" expanded="true" signature="2915:3250" ph="{...}" />
                 <marker date="1523128150486" expanded="true" signature="3127:3249" ph="{...}" />
@@ -104,11 +103,11 @@
         <option value="$PROJECT_DIR$/src/ts/naoto243-datepicker-modal.tsx" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/modal.tsx" />
-        <option value="$PROJECT_DIR$/Readme.md" />
         <option value="$PROJECT_DIR$/docs/index.html" />
         <option value="$PROJECT_DIR$/.npmignore" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/naoto243-datepicker-modal.tsx" />
+        <option value="$PROJECT_DIR$/Readme.md" />
       </list>
     </option>
   </component>
@@ -304,12 +303,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523099707941</updated>
-      <workItem from="1523099711142" duration="7064000" />
+      <workItem from="1523099711142" duration="7214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7064000" />
+    <option name="totallyTimeSpent" value="7214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="200" y="-1391" width="2149" height="1264" extended-state="0" />
@@ -416,8 +415,8 @@
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="76">
-            <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -426,8 +425,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/naoto243-datepicker-modal.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+        <state relative-caret-position="1349">
+          <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
           <folding>
             <marker date="1523128150486" expanded="true" signature="2915:3250" ph="{...}" />
             <marker date="1523128150486" expanded="true" signature="3127:3249" ph="{...}" />
