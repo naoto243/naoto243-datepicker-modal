@@ -1,4 +1,4 @@
- # naoto243-datepicker-modal#master 
+ # naoto243-datepicker-modal
 
 ```
 yarn add git+https://github.com/naoto243/naoto243-datepicker-modal#master 
@@ -8,7 +8,8 @@ yarn add git+https://github.com/naoto243/naoto243-datepicker-modal#master
 ```jsx
 
 const pdom : any = document.getElementById("modal-root");
-
+const birthDate = new Date();
+const moment = require("moment");
  ...
  
    <Naoto243DatePickerModal
@@ -23,6 +24,7 @@ const pdom : any = document.getElementById("modal-root");
        />
      )}
      onChange={date => {
+      ...
      }}
    />
 
