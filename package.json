@@ -19,7 +19,7 @@
     "typescript": "^2.8.1"
   },
   "scripts": {
-    "watch": "./node_modules/typescript/bin/tsc --watch --module es6  --jsx react --target es5 --allowJS --skipDefaultLibCheck --skipLibCheck --moduleResolution node src/** --outDir dist/ ",
-    "declaration": "./node_modules/typescript/bin/tsc --watch --module commonjs --jsx react --target esnext --skipDefaultLibCheck --emitDeclarationOnly --skipLibCheck --moduleResolution node --declaration  src/** --declarationDir type/ "
+    "watch": "./node_modules/typescript/bin/tsc       --watch --module es6 --jsx react --target es5 --allowJS --skipDefaultLibCheck --skipLibCheck --moduleResolution node src/** --outDir dist/ ",
+    "declaration": "./node_modules/typescript/bin/tsc --watch --module es6 --jsx react --target es5 --allowJS --skipDefaultLibCheck --skipLibCheck --moduleResolution node --emitDeclarationOnly  --declaration  src/** --declarationDir type/ "
   }
 }
