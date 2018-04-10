@@ -12,7 +12,7 @@ export interface Props {
   onChange : any
 }
 
-export default class Naoto243DatePickerModal extends React.Component<Props, any> {
+export default class DatePickerModal extends React.Component<Props, any> {
 
   open: boolean = false;
   ref: DayPicker | any;

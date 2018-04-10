@@ -26,18 +26,18 @@ import DayPicker from 'react-day-picker';
 var moment = require('moment');
 import { Modal } from './modal';
 var FontAwesome = require('react-fontawesome');
-var Naoto243DatePickerModal = /** @class */ (function (_super) {
-    __extends(Naoto243DatePickerModal, _super);
-    function Naoto243DatePickerModal() {
+var DatePickerModal = /** @class */ (function (_super) {
+    __extends(DatePickerModal, _super);
+    function DatePickerModal() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.open = false;
         return _this;
     }
-    Naoto243DatePickerModal.prototype.toggleOpen = function () {
+    DatePickerModal.prototype.toggleOpen = function () {
         this.open = !this.open;
         this.setState(__assign({}, this.state));
     };
-    Naoto243DatePickerModal.prototype.render = function () {
+    DatePickerModal.prototype.render = function () {
         var _this = this;
         return (React.createElement(React.Fragment, null,
             this.props.form({
@@ -70,9 +70,9 @@ var Naoto243DatePickerModal = /** @class */ (function (_super) {
                                 return (React.createElement("span", null));
                             } })))))));
     };
-    return Naoto243DatePickerModal;
+    return DatePickerModal;
 }(React.Component));
-export default Naoto243DatePickerModal;
+export default DatePickerModal;
 var ModalStyle = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  background-color: rgba(0, 0, 0, 0.5);\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 300;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n  & .day-picker {\n    background-color: #fbfbfb;\n    height: 330px;\n    width: 320px;\n    padding-bottom: 16px;\n    padding-top: 16px;\n  }\n"], ["\n  background-color: rgba(0, 0, 0, 0.5);\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 300;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n\n  & .day-picker {\n    background-color: #fbfbfb;\n    height: 330px;\n    width: 320px;\n    padding-bottom: 16px;\n    padding-top: 16px;\n  }\n"])));
 var NavStyle = styled.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n"], ["\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n"])));
 var DateText = styled.span(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  font-weight: bold;\n  font-size: 1.6em;\n  width : 100px;\n"], ["\n  font-weight: bold;\n  font-size: 1.6em;\n  width : 100px;\n"])));
