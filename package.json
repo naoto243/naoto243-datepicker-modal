@@ -1,6 +1,6 @@
 {
   "name": "naoto243-datepicker-modal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/naoto243-datepicker-modal.js",
   "types": "./type/naoto243-datepicker-modal.d.ts",
   "license": "MIT",

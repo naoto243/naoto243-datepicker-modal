@@ -138,11 +138,12 @@ const CalendarIconStyle = styled.div`
   
   & > * {
     padding: 2px;
+    cursor: pointer;
     font-size: 1.2em;
     font-weight: bold;
     //background-color: #c7c7cf;
     //border-radius: 3px;
-    margin-left: 4px;
+    margin-left: 8px;
     //color: white;
   }
 `
