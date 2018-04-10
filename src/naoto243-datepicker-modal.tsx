@@ -143,7 +143,7 @@ const CalendarIconStyle = styled.div`
     font-weight: bold;
     //background-color: #c7c7cf;
     //border-radius: 3px;
-    margin-left: 8px;
+    margin-left: 10px;
     //color: white;
   }
 `
